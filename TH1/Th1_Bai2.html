@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TH1_B2</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        width: 95%;
+        max-width: 1300px;
+        margin: 20px auto;
+      }
+
+      h1 {
+        color: #d40000;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        border-left: 6px solid red;
+        padding-left: 10px;
+      }
+
+      .courses {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 20px;
+      }
+
+      .course {
+        background: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+
+      .course:hover {
+        transform: translateY(-5px);
+      }
+
+      .course img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+      }
+
+      .course-content {
+        padding: 15px;
+      }
+
+      .course h3 {
+        margin-top: 0;
+        font-size: 18px;
+        color: #222;
+        margin-bottom: 10px;
+      }
+
+      .course p {
+        margin: 4px 0;
+        color: #333;
+        font-size: 14px;
+      }
+
+      .course .price {
+        color: #c40000;
+        font-weight: bold;
+      }
+
+      .icon-text {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .icon-text i {
+        color: red;
+        width: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>KHÓA HỌC SẮP KHAI GIẢNG</h1>
+      <div class="courses">
+        <div class="course">
+          <img
+            src="https://bkacad.edu.vn/images/news/olds/rfn1587524120.jpg"
+            alt="Học bổng lập trình"
+          />
+          <div class="course-content">
+            <h3>LẬP TRÌNH VIÊN QUỐC TẾ</h3>
+            <p>Chương trình đào tạo chuẩn quốc tế và toàn diện...</p>
+            <p class="icon-text">
+              <i class="fas fa-circle"></i> Học bổng: 15.000.000 VNĐ
+            </p>
+            <p class="icon-text">
+              <i class="fas fa-calendar-alt"></i> Khai giảng: 2/2024
+            </p>
+            <p class="icon-text">
+              <i class="fas fa-clock"></i> Thời lượng: 2 - 2.5 năm
+            </p>
+          </div>
+        </div>
+
+        <div class="course">
+          <img
+            src="https://aptech.fpt.edu.vn/wp-content/uploads/2022/06/tham-gia-khoa-hoc-lap-trinh-web-full-stack-la-con-duong-don-gian-nhat-de-tro-thanh-mot-lap-trinh-vien-website.jpg"
+            alt="Lập trình Fullstack"
+          />
+          <div class="course-content">
+            <h3>LẬP TRÌNH WEB FULLSTACK</h3>
+            <p>
+              Trang bị từ frontend đến backend, xây dựng website hoàn chỉnh.
+            </p>
+            <p class="icon-text">
+              <i class="fas fa-gift"></i> Ưu đãi giảm 15% học phí
+            </p>
+            <p class="icon-text">
+              <i class="fas fa-calendar-alt"></i> Khai giảng: 2/2024
+            </p>
+            <p class="icon-text">
+              <i class="fas fa-clock"></i> Thời lượng: 6 tháng
+            </p>
+          </div>
+        </div>
+
+        <div class="course">
+          <img
+            src="https://static.ladipage.net/58ed8c9934608a145cd4a4ed/1200-x-628-1-20210729111159.png"
+            alt="Lập trình Java"
+          />
+          <div class="course-content">
+            <h3>LẬP TRÌNH JAVA FULLSTACK</h3>
+            <p>Phát triển ứng dụng web từ cơ bản đến nâng cao bằng Java...</p>
+            <p class="icon-text">
+              <i class="fas fa-gift"></i> Ưu đãi giảm 15% học phí
+            </p>
+            <p class="icon-text">
+              <i class="fas fa-calendar-alt"></i> Khai giảng: 2/2024
+            </p>
+            <p class="icon-text">
+              <i class="fas fa-clock"></i> Thời lượng: 236 giờ
+            </p>
+          </div>
+        </div>
+
+        <div class="course">
+          <img
+            src="https://vnskills.edu.vn/wp-content/uploads/2024/05/Khoa-hoc-lap-trinh-php-fullstack.png"
+            alt="Lập trình PHP & Laravel"
+          />
+          <div class="course-content">
+            <h3>LẬP TRÌNH PHP & LARAVEL</h3>
+            <p>Học lập trình web hiện đại bằng PHP và Laravel.</p>
+            <p class="icon-text">
+              <i class="fas fa-money-bill"></i> Học phí: 9.600.000 VNĐ
+            </p>
+            <p class="icon-text">
+              <i class="fas fa-calendar-alt"></i> Khai giảng: 5/2024
+            </p>
+            <p class="icon-text">
+              <i class="fas fa-clock"></i> Thời lượng: 36 giờ
+            </p>
+          </div>
+        </div>
+
+        <div class="course">
+          <img
+            src="https://upskill.edu.vn/wp-content/uploads/2023/09/net-fullstack-developer.jpg"
+            alt="Lập trình .NET"
+          />
+          <div class="course-content">
+            <h3>KHÓA HỌC LẬP TRÌNH .NET</h3>
+            <p>Phát triển ứng dụng web sử dụng ASP.NET Core.</p>
+            <p class="icon-text">
+              <i class="fas fa-money-bill"></i> Học phí: 6.000.000 VNĐ
+            </p>
+            <p class="icon-text">
+              <i class="fas fa-calendar-alt"></i> Khai giảng: 2/2024
+            </p>
+            <p class="icon-text">
+              <i class="fas fa-clock"></i> Thời lượng: 40 giờ
+            </p>
+          </div>
+        </div>
+
+        <div class="course">
+          <img
+            src="https://upskill.edu.vn/wp-content/uploads/2023/09/khoa-hoc-chuyen-vien-lap-trinh-va-quan-tri-SQL-Server-DBA.png"
+            alt="Lập trình SQL Server"
+          />
+          <div class="course-content">
+            <h3>LẬP TRÌNH SQL SERVER</h3>
+            <p>Trang bị kiến thức lưu trữ, phân tích và xử lý dữ liệu.</p>
+            <p class="icon-text">
+              <i class="fas fa-money-bill"></i> Học phí: 4.500.000 VNĐ
+            </p>
+            <p class="icon-text">
+              <i class="fas fa-calendar-alt"></i> Khai giảng: 2/2024
+            </p>
+            <p class="icon-text">
+              <i class="fas fa-clock"></i> Thời lượng: 30 giờ
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
