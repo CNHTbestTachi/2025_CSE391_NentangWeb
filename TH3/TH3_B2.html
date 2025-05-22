@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form Đăng Ký</title>
+    <link rel="stylesheet" href="TH3_B2.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="TH3_B2.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Form Đăng Ký</h2>
+      <form id="demoForm">
+        <label>Tên người dùng:</label>
+        <input type="text" name="username" id="username" />
+        <span class="error"></span>
+
+        <label>Họ và tên:</label>
+        <input type="text" name="name" id="name" />
+        <span class="error"></span>
+
+        <label>Email:</label>
+        <input type="text" name="email" id="email" />
+        <span class="error"></span>
+
+        <label>Mật khẩu:</label>
+        <input type="password" name="password" id="password" />
+        <span class="error"></span>
+
+        <label>Nhập lại mật khẩu:</label>
+        <input type="password" name="re-password" id="re-password" />
+        <span class="error"></span>
+
+        <button type="submit">Đăng ký</button>
+      </form>
+
+      <!-- <button id="deleteBtn">Xóa thông tin</button>
+      <div id="showText">✅ Bạn đã đồng ý xóa dữ liệu!</div> -->
+    </div>
+  </body>
+</html>
