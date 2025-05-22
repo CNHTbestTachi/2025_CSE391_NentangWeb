@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản Lý Công Việc</title>
+    <link rel="stylesheet" href="TH3_B1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Quản Lý Công Việc (Todo List)</h1>
+      <!-- Nhập công việc -->
+      <div class="input-group">
+        <input type="text" id="taskInput" placeholder="Nhập công việc..." />
+        <button onclick="addTask()">Thêm công việc</button>
+      </div>
+
+      <!-- Tìm kiếm -->
+      <div class="search-group">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Tìm kiếm công việc..."
+        />
+      </div>
+
+      <!-- Bộ lọc -->
+      <div class="filter-group">
+        <button onclick="filterTasks('all')">Tất cả</button>
+        <button onclick="filterTasks('active')">Chưa hoàn thành</button>
+        <button onclick="filterTasks('done')">Đã hoàn thành</button>
+      </div>
+
+      <!-- Danh sách công việc -->
+      <ul id="taskList"></ul>
+
+      <!-- Nút xóa tất cả -->
+      <div class="action-group">
+        <button onclick="clearAllTasks()">🗑️ Xóa tất cả công việc</button>
+      </div>
+    </div>
+
+    <script src="TH3_B1.js"></script>
+  </body>
+</html>
